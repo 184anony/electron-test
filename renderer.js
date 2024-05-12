@@ -2,6 +2,8 @@ const NOTIFICATION_TITLE = "Time's up!";
 const NOTIFICATION_BODY = "10秒経過しました";
 const CLICK_MESSAGE = "Time's up!";
 
+Notification.requestPermission();
+
 function sendNotification() {
     new Notification(NOTIFICATION_TITLE, {
         body: NOTIFICATION_BODY,
