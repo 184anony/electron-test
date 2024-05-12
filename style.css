@@ -1,0 +1,19 @@
+html {
+    height: 100vh;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    padding: 150px;
+}
+
+#countdown {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+#information {
+    color: white;
+}
