@@ -5,7 +5,7 @@
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
         <meta
             http-equiv="Content-Security-Policy"
-            content="default-src 'self'; script-src 'self'"
+            content="script-src 'self' 'unsafe-inline';"
         />
         <title>Hello World!</title>
     </head>
@@ -14,6 +14,16 @@
         We are using Node.js <span id="node-version"></span>, Chromium
         <span id="chrome-version"></span>, and Electron
         <span id="electron-version"></span>.
+
+        <div class="notification">
+            <button
+                type="button"
+                id="notification_btn"
+                onclick="sendNotification()"
+            >
+                Push通知を送信
+            </button>
+        </div>
 
         <script src="./renderer.js"></script>
     </body>
